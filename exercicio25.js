@@ -1,0 +1,10 @@
+var e=require('prompt-sync')();
+var hora, minutos, horaminutos, conta, segundos;
+hora=Number(e("Digite a hora:"));
+minutos=Number(e("Digite os minutos:"));
+horaminutos=hora*60;
+conta=minutos+horaminutos;
+segundos=conta*60;
+console.log("A hora digitada convertida em minutos é:",horaminutos,"minutos");
+console.log("O total de minutos é:",conta,"minutos");
+console.log("O total de segundos é:",segundos,"segundos");

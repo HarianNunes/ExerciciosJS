@@ -1,0 +1,12 @@
+var e=require('prompt-sync')();
+var divida1, divida2, salario, sobra, conta1, conta2;
+divida1=Number(e("Digite o valor da conta a pagar: "));
+divida2= Number(e("Digite o valor da conta a pagar: "));
+salario=Number(e("Digite o seu salário: "));
+conta1=(divida1*1.02);
+conta2=(divida2*1.02);
+conta=conta1+conta2;
+sobra=salario-conta;
+console.log("O valor da primeira conta com 2% de acrécimo é:",conta1);
+console.log("O valor da segunda conta com 2% de acrécimo é:",conta2);
+console.log("Sobrará exatamente:",sobra, "reais do seu salário.");
